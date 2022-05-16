@@ -1,13 +1,12 @@
 package net.blay09.mods.excompressum.tile;
 
-import cpw.mods.fml.common.Optional;
+import java.util.Collection;
+
 import exnihilo.registries.helpers.Smashable;
 import net.blay09.mods.excompressum.ExCompressum;
 import net.blay09.mods.excompressum.ModItems;
 import net.blay09.mods.excompressum.registry.CompressedHammerRegistry;
 import net.minecraft.item.ItemStack;
-
-import java.util.Collection;
 
 public class TileEntityAutoCompressedHammer extends TileEntityAutoHammer {
 

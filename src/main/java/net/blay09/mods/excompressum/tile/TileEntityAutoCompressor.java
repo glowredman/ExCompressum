@@ -1,13 +1,13 @@
 package net.blay09.mods.excompressum.tile;
 
-import cofh.api.energy.EnergyStorage;
-import cofh.api.energy.IEnergyHandler;
 import com.google.common.collect.HashMultiset;
 import com.google.common.collect.Multiset;
-import cpw.mods.fml.common.Optional;
+
+import cofh.api.energy.EnergyStorage;
+import cofh.api.energy.IEnergyHandler;
 import net.blay09.mods.excompressum.ExCompressum;
-import net.blay09.mods.excompressum.registry.data.CompressedRecipe;
 import net.blay09.mods.excompressum.registry.CompressedRecipeRegistry;
+import net.blay09.mods.excompressum.registry.data.CompressedRecipe;
 import net.minecraft.entity.item.EntityItem;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.ISidedInventory;

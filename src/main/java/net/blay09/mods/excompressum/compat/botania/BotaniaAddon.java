@@ -1,6 +1,5 @@
 package net.blay09.mods.excompressum.compat.botania;
 
-import codechicken.nei.api.API;
 import cpw.mods.fml.common.Optional;
 import cpw.mods.fml.common.event.FMLServerStartedEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
@@ -56,7 +55,6 @@ public class BotaniaAddon implements IAddon, INEIAddon {
     }
 
     @Override
-    @SuppressWarnings("unchecked")
     public void postInit() {
         runicAltar = GameRegistry.findBlock("Botania", "runeAltar");
 
@@ -77,7 +75,7 @@ public class BotaniaAddon implements IAddon, INEIAddon {
                     return "botania.tagline.excompressum.orechidEvolved";
                 }
             };
-            lexiconOrechidEvolved.setLexiconPages(new PageText(LEXICON_ORECHID_EVOLVED_PAGE + "0"), new PagePetalRecipe(LEXICON_ORECHID_EVOLVED_PAGE + "1", recipeOrechidEvolved));
+            lexiconOrechidEvolved.setLexiconPages(new PageText(LEXICON_ORECHID_EVOLVED_PAGE + "0"), new PagePetalRecipe<>(LEXICON_ORECHID_EVOLVED_PAGE + "1", recipeOrechidEvolved));
             lexiconOrechidEvolved.setPriority();
             BotaniaAPI.addEntry(lexiconOrechidEvolved, lexiconOrechidEvolved.category);
             BotaniaAPI.addSubTileToCreativeMenu(SUBTILE_ORECHID_EVOLVED);
@@ -100,7 +98,7 @@ public class BotaniaAddon implements IAddon, INEIAddon {
                     return "botania.tagline.excompressum.brokenComprilla";
                 }
             };
-            lexiconBrokenComprilla.setLexiconPages(new PageText(LEXICON_BROKEN_COMPRILLA_PAGE + "0"), new PagePetalRecipe(LEXICON_BROKEN_COMPRILLA_PAGE + "1", recipeBrokenComprilla));
+            lexiconBrokenComprilla.setLexiconPages(new PageText(LEXICON_BROKEN_COMPRILLA_PAGE + "0"), new PagePetalRecipe<>(LEXICON_BROKEN_COMPRILLA_PAGE + "1", recipeBrokenComprilla));
             lexiconBrokenComprilla.setPriority();
             BotaniaAPI.addEntry(lexiconBrokenComprilla, lexiconBrokenComprilla.category);
             BotaniaAPI.addSubTileToCreativeMenu(SUBTILE_BROKEN_COMPRILLA);

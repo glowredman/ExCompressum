@@ -115,7 +115,7 @@ public abstract class BlockAutoSieve extends BlockContainer {
 			}
 		}
 		if (!world.isRemote && useRandomSkin) {
-			tileEntity.setCustomSkin(new GameProfile(null, AutoSieveSkinRegistry.getRandomSkin()));
+			tileEntity.setCustomSkin(new GameProfile(null, AutoSieveSkinRegistry.getRandomSkin().getName()));
 		}
 		int facing = MathHelper.floor_double((double) (player.rotationYaw * 4.0F / 360.0F) + 0.5D) & 3;
 		if (facing == 0) {

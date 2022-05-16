@@ -5,9 +5,6 @@ import codechicken.nei.api.IConfigureNEI;
 import net.blay09.mods.excompressum.ExCompressum;
 import net.blay09.mods.excompressum.compat.IAddon;
 import net.blay09.mods.excompressum.compat.INEIAddon;
-import net.blay09.mods.excompressum.compat.botania.BotaniaAddon;
-import net.minecraft.item.ItemStack;
-import vazkii.botania.common.item.block.ItemBlockSpecialFlower;
 
 public class NEIExCompressumConfig implements IConfigureNEI {
     @Override

@@ -1,16 +1,21 @@
-[
 {
-  "modid": "excompressum",
-  "name": "Ex Compressum",
-  "description": "Ex Nihilo Addon. Adds compressed hammers, automatic sieves and hammerers, wooden crucibles, ...",
-  "version": "${version}",
-  "mcversion": "${mcversion}",
-  "url": "",
-  "updateUrl": "",
-  "authorList": ["BlayTheNinth"],
-  "credits": "BlayTheNinth",
-  "logoFile": "",
-  "screenshots": [],
-  "dependencies": ["required-after:exnihilo"]
+	"modListVersion": 2,
+	"modList": [{
+		"modid": "${modId}",
+		"name": "${modName}",
+		"description": "Ex Nihilo Addon. Adds compressed hammers, automatic sieves and hammerers, wooden crucibles, ...",
+		"version": "${modVersion}",
+		"mcversion": "${minecraftVersion}",
+		"url": "https://blay09.net/mods/excompressum/",
+		"updateUrl": "",
+		"authorList": ["BlayTheNinth"],
+		"credits": "",
+		"logoFile": "",
+		"screenshots": [],
+		"parent": "",
+		"requiredMods": ["exnihilo"],
+		"dependencies": ["exnihilo"],
+		"dependants": [],
+		"useDependencyInformation": true
+	}]
 }
-]

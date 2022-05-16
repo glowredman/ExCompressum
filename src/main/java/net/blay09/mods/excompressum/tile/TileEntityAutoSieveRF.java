@@ -2,7 +2,6 @@ package net.blay09.mods.excompressum.tile;
 
 import cofh.api.energy.EnergyStorage;
 import cofh.api.energy.IEnergyHandler;
-import cpw.mods.fml.common.Optional;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraftforge.common.util.ForgeDirection;
 

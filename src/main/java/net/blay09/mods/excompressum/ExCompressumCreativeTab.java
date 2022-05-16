@@ -21,7 +21,7 @@ public class ExCompressumCreativeTab extends CreativeTabs {
     }
 
     @Override
-    @SuppressWarnings("unchecked")
+    @SuppressWarnings({ "unchecked", "rawtypes" })
     public void displayAllReleventItems(List list) {
         super.displayAllReleventItems(list);
         list.addAll(additionalItems);

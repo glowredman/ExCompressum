@@ -6,7 +6,6 @@ import net.blay09.mods.excompressum.registry.CompressedRecipeRegistry;
 import net.blay09.mods.excompressum.registry.HeavySieveRegistry;
 import net.minecraftforge.common.config.Configuration;
 
-@SuppressWarnings("unused")
 public class MineTweakerAddonLegacy implements IAddon {
     @Override
     public void loadConfig(Configuration config) {}

@@ -1,32 +1,25 @@
 package net.blay09.mods.excompressum.compat.nei;
 
+import java.awt.Point;
+import java.awt.Rectangle;
+import java.util.List;
+import java.util.Map;
+
+import org.lwjgl.opengl.GL11;
+
+import com.google.common.collect.Lists;
+
 import codechicken.lib.gui.GuiDraw;
 import codechicken.nei.NEIServerUtils;
 import codechicken.nei.PositionedStack;
 import codechicken.nei.recipe.GuiRecipe;
 import codechicken.nei.recipe.TemplateRecipeHandler;
-import com.google.common.collect.HashMultiset;
-import com.google.common.collect.Lists;
-import com.google.common.collect.Multimap;
-import com.google.common.collect.Multiset;
 import exnihilo.registries.CompostRegistry;
 import exnihilo.registries.helpers.Compostable;
-import exnihilo.registries.helpers.Smashable;
 import exnihilo.utils.ItemInfo;
-import net.blay09.mods.excompressum.registry.CompressedHammerRegistry;
-import net.blay09.mods.excompressum.registry.data.ItemAndMetadata;
-import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
-import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.util.EnumChatFormatting;
-import org.lwjgl.opengl.GL11;
-
-import java.awt.*;
-import java.util.Collection;
-import java.util.List;
-import java.util.Map;
 
 public class RecipeHandlerComposting extends TemplateRecipeHandler {
 

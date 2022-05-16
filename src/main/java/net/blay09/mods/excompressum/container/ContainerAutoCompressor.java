@@ -44,6 +44,7 @@ public class ContainerAutoCompressor extends Container {
         }
     }
 
+    @SuppressWarnings("unchecked")
     @Override
     public void detectAndSendChanges() {
         super.detectAndSendChanges();

@@ -1,0 +1,40 @@
+repositories {
+    maven {
+        name "tterag maven"
+        url "https://maven.tterrag.com/"
+    }
+    maven {
+        name "progwml6 maven"
+        url "https://dvs1.progwml6.com/files/maven"
+    }
+    maven {
+        name "ChickenBones maven"
+        url "https://chickenbones.net/maven/"
+    }
+    maven {
+        name "ProfMobius maven"
+        url "https://mobiusstrip.eu/maven"
+    }
+    maven {
+        name "cover1624 maven"
+        url "https://maven.covers1624.net/"
+        metadataSources {
+            artifact()
+        }
+    }
+    ivy {
+        name "MineTweaker"
+        artifactPattern "http://minetweaker3.powerofbytes.com/download/[module](-[classifier])-[revision].[ext]"
+        metadataSources {
+            artifact()
+        }
+    }
+    maven {
+        name "CurseMaven"
+        url "https://www.cursemaven.com/"
+    }
+    maven {
+        name "GTNH maven"
+        url "http://jenkins.usrv.eu:8081/nexus/content/repositories/public/"
+    }
+}

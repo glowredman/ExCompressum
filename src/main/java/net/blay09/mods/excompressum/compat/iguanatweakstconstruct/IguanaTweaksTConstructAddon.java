@@ -18,7 +18,7 @@ public class IguanaTweaksTConstructAddon implements IAddon {
     @SuppressWarnings("unchecked")
     public void postInit() {
         try {
-            Class clazz = Class.forName("iguanaman.iguanatweakstconstruct.tweaks.IguanaTweaks");
+            Class<?> clazz = Class.forName("iguanaman.iguanatweakstconstruct.tweaks.IguanaTweaks");
             Field toolWhitelistField = clazz.getField("toolWhitelist");
             Set<Item> toolWhitelist = (Set<Item>) toolWhitelistField.get(null);
             toolWhitelist.add(ModItems.compressedCrook);

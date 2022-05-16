@@ -9,7 +9,6 @@ import net.blay09.mods.excompressum.registry.CompressedRecipeRegistry;
 import net.blay09.mods.excompressum.registry.HeavySieveRegistry;
 import net.minecraftforge.common.config.Configuration;
 
-@SuppressWarnings("unused")
 @Optional.Interface(modid = "MineTweaker3", iface = "minetweaker.util.IEventHandler", striprefs = true)
 public class MineTweakerAddon implements IEventHandler<MineTweakerImplementationAPI.ReloadEvent>, IAddon {
     public MineTweakerAddon() {

@@ -20,18 +20,18 @@ public class ItemBlockManaSieve extends ItemBlock {
     private String currentRandomName;
 
     @Override
-    @SuppressWarnings("unchecked")
+    @SuppressWarnings({ "unchecked", "rawtypes" })
     public void addInformation(ItemStack itemStack, EntityPlayer entityPlayer, List list, boolean flag) {
         if(itemStack.stackTagCompound != null && itemStack.stackTagCompound.hasKey("CustomSkin")) {
             list.add("\u00a77" + I18n.format("tooltip.excompressum:mana_sieve", NBTUtil.func_152459_a(itemStack.stackTagCompound.getCompoundTag("CustomSkin")).getName()));
         } else {
             if(currentRandomName == null) {
-                currentRandomName = AutoSieveSkinRegistry.getRandomSkin();
+                currentRandomName = AutoSieveSkinRegistry.getRandomSkin().getName();
             }
             list.add("\u00a77" + I18n.format("tooltip.excompressum:mana_sieve", currentRandomName));
         }
         if(lastHoverStack != itemStack) {
-            currentRandomName = AutoSieveSkinRegistry.getRandomSkin();
+            currentRandomName = AutoSieveSkinRegistry.getRandomSkin().getName();
             lastHoverStack = itemStack;
         }
     }

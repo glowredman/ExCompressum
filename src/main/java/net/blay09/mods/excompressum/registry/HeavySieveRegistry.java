@@ -1,7 +1,11 @@
 package net.blay09.mods.excompressum.registry;
 
+import java.util.Collection;
+import java.util.List;
+
 import com.google.common.collect.ArrayListMultimap;
 import com.google.common.collect.Multimap;
+
 import cpw.mods.fml.common.registry.GameRegistry;
 import exnihilo.registries.SieveRegistry;
 import exnihilo.registries.helpers.SiftingResult;
@@ -13,11 +17,6 @@ import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.oredict.OreDictionary;
-
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
-import java.util.Map;
 
 public class HeavySieveRegistry {
 
