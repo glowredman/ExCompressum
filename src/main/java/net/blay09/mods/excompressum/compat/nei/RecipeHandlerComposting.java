@@ -82,9 +82,7 @@ public class RecipeHandlerComposting extends TemplateRecipeHandler {
 
     @Override
     public List<String> handleItemTooltip(GuiRecipe gui, ItemStack itemStack, List<String> list, int recipeIdx) {
-        CachedCompostRecipe recipe = (CachedCompostRecipe) arecipes.get(recipeIdx);
-        ItemStack sourceStack = recipe.input.get(0).item;
-        if (itemStack != null && itemStack != sourceStack) {
+        if (itemStack != null && NEIExCompressumConfig.contains(((CachedCompostRecipe) arecipes.get(recipeIdx)).getOtherStacks(), itemStack)) {
             Compostable compostable = CompostRegistry.getItem(itemStack.getItem(), itemStack.getItemDamage());
             if(compostable != null) {
                 list.add("Amount: " + compostable.value);

@@ -84,3 +84,7 @@ botania.page.excompressum.brokenComprilla0=You sieved yourself a good amount of 
 botania.page.excompressum.brokenComprilla1=Keeping the tradition.
 tile.botania:flower.excompressum.brokenComprilla.name=Broken Comprilla
 tile.botania:flower.excompressum.brokenComprilla.reference=It's not actually broken
+
+# Extra Utilities fixes:
+tile.dirt.name=Dirt
+tile.sand.name=Sand

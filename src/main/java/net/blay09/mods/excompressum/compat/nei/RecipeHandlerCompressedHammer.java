@@ -81,11 +81,12 @@ public class RecipeHandlerCompressedHammer extends TemplateRecipeHandler {
     }
 
     private final Multiset<String> condensedTooltip = HashMultiset.create();
+    
     @Override
     public List<String> handleItemTooltip(GuiRecipe gui, ItemStack itemStack, List<String> list, int recipeIdx) {
         CachedHammerRecipe recipe = (CachedHammerRecipe) arecipes.get(recipeIdx);
         ItemStack sourceStack = recipe.input.get(0).item;
-        if (itemStack != null && itemStack != sourceStack) {
+        if (itemStack != null && NEIExCompressumConfig.contains(recipe.getOtherStacks(), itemStack)) {
             list.add("Drop Chance:");
             condensedTooltip.clear();
             for (Smashable smashable : CompressedHammerRegistry.getSmashables(Block.getBlockFromItem(sourceStack.getItem()), sourceStack.getItemDamage())) {

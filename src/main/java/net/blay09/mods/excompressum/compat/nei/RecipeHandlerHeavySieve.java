@@ -82,7 +82,7 @@ public class RecipeHandlerHeavySieve extends TemplateRecipeHandler {
     public List<String> handleItemTooltip(GuiRecipe gui, ItemStack itemStack, List<String> list, int recipeIdx) {
         CachedHeavySieveRecipe recipe = (CachedHeavySieveRecipe) arecipes.get(recipeIdx);
         ItemStack sourceStack = recipe.input.get(0).item;
-        if (itemStack != null && itemStack != sourceStack) {
+        if (itemStack != null && NEIExCompressumConfig.contains(recipe.getOtherStacks(), itemStack)) {
             list.add("Drop Chance:");
             condensedTooltip.clear();
             for (SiftingResult result : HeavySieveRegistry.getSiftingOutput(Block.getBlockFromItem(sourceStack.getItem()), sourceStack.getItemDamage())) {
