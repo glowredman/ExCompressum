@@ -115,7 +115,7 @@ public class RecipeHandlerComposting extends TemplateRecipeHandler {
 
     @Override
     public void loadCraftingRecipes(String outputID, Object... wat) {
-        if (!outputID.equals("excompressum.neiComposting")) {
+        if (!outputID.equals("excompressum.composting")) {
             super.loadCraftingRecipes(outputID, wat);
             return;
         }

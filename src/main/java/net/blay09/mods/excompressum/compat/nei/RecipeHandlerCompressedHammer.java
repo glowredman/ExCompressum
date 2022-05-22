@@ -128,7 +128,7 @@ public class RecipeHandlerCompressedHammer extends TemplateRecipeHandler {
 
     @Override
     public void loadCraftingRecipes(String outputID, Object... wat) {
-        if (!outputID.equals("excompressum.hammer")) {
+        if (!outputID.equals("excompressum.compressedHammer")) {
             super.loadCraftingRecipes(outputID, wat);
             return;
         }
